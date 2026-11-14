@@ -1,17 +1,15 @@
 ### 野坂 健成 (Kensei Nosaka)
 
-筑波大学 修士1年。予測精度だけでなく「その予測でどんな意思決定ができるか」で評価する、**数理最適化 × 機械学習**に取り組んでいます。
+筑波大学大学院 修士1年｜数理最適化 × 機械学習
 
-- **関心領域**: Decision-Focused Learning、組合せ最適化、小規模データでの検証設計
-- **Kaggle**: Competitions Expert・銅メダル 2 個 — Santa 2025（配置最適化, 287/3357位）、CSIRO Image2Biomass（画像回帰, 253/3805位）
+- **Interests**: Decision-Focused Learning, 組合せ最適化
+- **Kaggle**: Competitions Expert — Santa 2025 銅メダル, CSIRO Image2Biomass 銅メダル
 
-#### 主なリポジトリ
+#### Repositories
 
-| リポジトリ | 課題 | アプローチ |
-|---|---|---|
-| [dfl-portfolio](https://github.com/nuummm/dfl-portfolio) | リターン予測を、予測誤差ではなくポートフォリオの意思決定コストで学習する | 平均分散 QP を KKT 条件で埋め込んだ一段化モデル（Pyomo）。閉形式解と総当たりの参照解で検証 |
-| [csiro-image2biomass](https://github.com/nuummm/csiro-image2biomass) | 牧草画像 357 枚から 5 種類のバイオマス量を推定する | DINOv3 の凍結埋め込み、日付グループ CV、ターゲット間の加法制約の扱い |
-| [santa2025-tree-packing](https://github.com/nuummm/santa2025-tree-packing) | 1〜200 個の非凸多角形を最小の正方形に詰める | Numba による SAT 衝突判定と焼きなまし法、公式互換の検証器 |
-| [group-scheduler](https://github.com/nuummm/group-scheduler) | 1 つの部屋を共有する定例ミーティング群の時間割を決める | 自作の分枝限定法（Cloudflare Workers 上で動作）、厳密解オラクルとの比較で検証 |
+- [**dfl-portfolio**](https://github.com/nuummm/dfl-portfolio) — 意思決定重視学習による平均分散ポートフォリオ最適化（KKT による一段化）
+- [**csiro-image2biomass**](https://github.com/nuummm/csiro-image2biomass) — 牧草画像からのバイオマス推定（DINOv3 埋め込み・日付グループ CV）
+- [**santa2025-tree-packing**](https://github.com/nuummm/santa2025-tree-packing) — 非凸多角形の最小正方形への詰め込み（Numba・焼きなまし法）
+- [**group-scheduler**](https://github.com/nuummm/group-scheduler) — 定例ミーティングの時間割を最適化する Web アプリ（自作の分枝限定法・Cloudflare Workers）
 
-**使用技術**: Python（NumPy, scikit-learn, PyTorch, Numba, Pyomo）・TypeScript（React, Cloudflare Workers）・uv・pytest・GitHub Actions
+**Tech**: Python · PyTorch · scikit-learn · Numba · Pyomo · TypeScript · React · Cloudflare Workers
